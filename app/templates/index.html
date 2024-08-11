@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makers Tech</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Makers Tech - AI powered E-commerce for you</h1>
+    </header>
+
+    <nav>
+        <ul>
+          <li><a href="#service">Our service</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        
+        <div class="info">
+
+            <a name="service"></a>
+            <section>
+                <h2>Our service</h2>
+                <p>
+                    At Makers Tech, we bring the store to you! If you're hunting for the latest fashion trends, our intelligent SellBot is here to guide you. Just ask, and we'll provide you with critical recommendations that match your needs and budget. Experience a seamless shopping journey with instant answers, product details, and unbeatable technology at your fingertips.
+                </p>
+            </section>
+
+            <a name="about"></a>
+            <section>
+                <h2>About us</h2>
+                <p>
+                    Makers Tech is revolutionizing the way you shop. We are a passionate team of tech enthusiasts dedicated to making your online shopping experience smarter and more efficient. Our mission is to merge cutting-edge technology with top-notch customer service, ensuring that you always find what you’re looking for, at the best possible price. Innovation, convenience, and customer satisfaction are at the heart of everything we do.
+                </p>
+            </section>
+
+            <a name="contact"></a>
+            <section>
+                <h2>Contact</h2>
+                <div class="contact-content">
+                    <p>
+                        Have a question, feedback, or need assistance? We’re here to help! Reach out to us anytime, and our friendly support team will get back to you as soon as possible.
+                    </p>
+                    <section id="contact">
+                        <form class="contact-form" onsubmit="clearForm(event)">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </section>
+                </div>
+            </section>
+        
+        </div>
+
+        <div class="chat">
+            <main>
+                <section>
+                    <h1>Chat with our SellerBot</h1>
+                </section>
+                <form id="inputForm">
+                    <div class="input-group">
+                        <input type="text" id="inputText" placeholder="Ask about inventory, features or prices!">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+                <div id="result-container">
+                    <div id="history"></div>
+                    <p id="result"></p>
+                </div>
+            </main>
+            <footer>
+                <p>By Alejandro Barrera & Maria Fernanda Cabrales</p>
+            </footer>
+        </div>
+
+    </div>
+
+    <script src="../static/script.js"></script>
+</body>
+
+</html>
